@@ -1,0 +1,21 @@
+# Normaliza fim de linha para o repositorio nao ficar convertendo LF/CRLF a cada
+# clone (o padrao do Git no Windows e core.autocrlf=true).
+* text=auto
+
+*.py       text eol=lf
+*.md       text eol=lf
+*.json     text eol=lf
+*.yml      text eol=lf
+*.txt      text eol=lf
+LICENSE    text eol=lf
+.gitignore text eol=lf
+
+# o proprio .gitattributes, para nao avisar a cada git add
+.gitattributes text eol=lf
+
+# Scripts do Windows: CRLF e o esperado pelo cmd.exe
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+
+# Indices gerados nunca sao versionados, mas se alguem forcar:
+*.db binary

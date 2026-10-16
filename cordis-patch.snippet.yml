@@ -1,0 +1,17 @@
+# Exemplo de registro no DSH. Troque os dois caminhos pelos da sua maquina —
+# o setup.cmd imprime este bloco ja preenchido.
+#
+# Cole como mais um item DENTRO da lista "insert:" que ja existe em
+# ~/.dsh/profiles/<perfil>/cordis.patch.yml. Nao crie um segundo "- insert:".
+#
+# toolCallTimeoutMs e generoso de proposito: a primeira consulta semantica
+# carrega o modelo de embeddings sob demanda.
+
+    - id: mcp-openkore
+      name: "@deepseek-ai/dsh-mcp-client"
+      config:
+        serverName: openkore
+        transport: stdio
+        command: '<PYTHON_EXE>'
+        args: [ '<ABSOLUTE_PATH_TO_REPO>/server.py' ]
+        toolCallTimeoutMs: 300000

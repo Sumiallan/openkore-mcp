@@ -1,0 +1,6 @@
+# Indices gerados (reconstruiveis: rode ingest.py / ingest_code.py / build_vectors.py)
+*.db
+docs/
+__pycache__/
+*.pyc
+.venv/

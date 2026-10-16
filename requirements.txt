@@ -1,0 +1,4 @@
+# Optional. Only needed for semantic (multilingual) search.
+# Without it, the server still works — search stays lexical.
+#   pip install -r requirements.txt
+fastembed>=0.4

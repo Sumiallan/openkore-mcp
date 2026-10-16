@@ -1,0 +1,9 @@
+{
+  "_comment": "Exemplo generico (Claude Desktop, Cursor, VS Code, outros clientes MCP). Troque os dois caminhos pelos da sua maquina. O setup.cmd imprime este bloco ja preenchido.",
+  "mcpServers": {
+    "openkore": {
+      "command": "<PYTHON_EXE>",
+      "args": ["<ABSOLUTE_PATH_TO_REPO>/server.py"]
+    }
+  }
+}
